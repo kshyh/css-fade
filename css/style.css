@@ -48,7 +48,7 @@ ol, ul, li {
   text-align: center;
   background-color: rgba(0,0,0,0.75);
 
-  /* values and properties responsible for fade animation */
+  /* begining of values and properties responsible for fade animation */
   height: 0;
   opacity: 0;
   -webkit-transition: height 0s linear 0.3s, opacity 0.3s linear;
@@ -63,6 +63,7 @@ ol, ul, li {
      -moz-transition-delay: 0s;
        -o-transition-delay: 0s;
           transition-delay: 0s;
+  /* end of values and properties responsible for fade animation */
 }
 .layer i {
   color: rgba(255, 255, 255, 0.8);
