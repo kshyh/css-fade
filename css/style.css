@@ -1,0 +1,71 @@
+html {
+  font-size: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: small;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1.231;
+  font-size: 0.625em;
+  background: rgba(70, 56, 35, 0.7);
+}
+input, select, textarea {
+  font-size: 100%;
+}
+h1, h2, h3, h4, h5, h6, h7, p, ul, li {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+ol, ul, li {
+  list-style: none;
+}
+.container {
+  width: 650px;
+  margin: 50px auto 0;
+}
+.layer {
+  position: relative;
+  padding: 5px;
+  background-color: white;
+}
+.layer img {
+  display: block;
+}
+.layer div {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  background-color: rgba(0,0,0,0.75);
+
+  /* values and properties responsible for fade animation */
+  height: 0;
+  opacity: 0;
+  -webkit-transition: height 0s linear 0.3s, opacity 0.3s linear;
+     -moz-transition: height 0s linear 0.3s, opacity 0.3s linear;
+       -o-transition: height 0s linear 0.3s, opacity 0.3s linear;
+          transition: height 0s linear 0.3s, opacity 0.3s linear;
+}
+.layer:hover div {
+  height: 100%;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+     -moz-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.layer i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 6em;
+  line-height: 361px;
+}
